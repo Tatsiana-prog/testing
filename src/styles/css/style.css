@@ -756,7 +756,7 @@ input:focus,
   align-items: center;
   width: 100vw;
   height: 850px;
-  background-image: url(/img/IMG.png);
+  background-image: url(../../../../img/img.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
