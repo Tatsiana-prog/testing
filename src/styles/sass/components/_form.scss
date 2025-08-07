@@ -1,0 +1,218 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form__row {
+  padding-right: 11.5px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+  margin: 0 auto 30px;
+  @media (max-width: 1199px) {
+    padding-right: 0px;
+  }
+  @media (max-width: 992px) {
+    width: 60%;
+    flex-direction: column;
+  }
+  @media (max-width: 575px) {
+    width: 100%;
+  }
+}
+.form__progress-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 26px;
+  padding-left: 15.5px;
+  justify-content: space-between;
+  margin-bottom: 55.8px;
+  @media (max-width: 1199px) {
+    flex-direction: column;
+    padding: 15.5px 0;
+    margin-bottom: 30px;
+  }
+  @media (max-width: 992px) {
+    width: 60%;
+    margin: 0 auto;
+  }
+  @media (max-width: 575px) {
+    width: 100%;
+  }
+}
+label {
+  margin-right: 10px;
+  font-size: 15px;
+}
+.custom-select {
+  display: inline-block;
+  @media (max-width: 992px) {
+    margin: 0 auto;
+  }
+}
+.form__input,
+.form__select,
+.file-upload-label,
+.custom-select {
+  padding: 12px 35.52px 12px 10px;
+  border-radius: 3px;
+  background: $color-white;
+  color: $color-black;
+  width: 370px;
+  @media (max-width: 1199px) {
+    width: 280px;
+  }
+  @media (max-width: 992px) {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.file-upload-label {
+  display: inline-flex;
+  justify-content: center;
+  column-gap: 10px;
+  align-items: center;
+  text-transform: uppercase;
+  margin-right: 0;
+  @media (max-width: 1199px) {
+    margin: 0 auto;
+  }
+  @media (max-width: 992px) {
+    width: 309px;
+  }
+  @media (max-width: 575px) {
+    width: 100%;
+  }
+}
+select {
+  appearance: none;
+}
+select,
+input::placeholder {
+  font-size: 18px;
+  font-weight: 400;
+  color: $color-dark;
+}
+select:focus,
+input:focus,
+.file-upload-label:focus {
+  border: 1px solid $color-add;
+}
+
+.progress-row__content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.progress-bar {
+  width: 770px;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.7);
+  outline: 1px white solid;
+  outline-offset: -0.5px;
+  border-radius: 3px;
+  @media (max-width: 992px) {
+    width: 100%;
+  }
+}
+.progress__column {
+  width: 770px;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 1199px) {
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto 30px;
+  }
+}
+.progress-bar div {
+  position: relative;
+  width: 75%;
+  height: 6px;
+}
+.progress-bar div span {
+  position: absolute;
+  width: 23.72px;
+  height: 23.72px;
+  float: right;
+  top: -9px;
+  right: -20px;
+  border-radius: 50%;
+  background: $color-add;
+  outline: 3px $dark-blue solid;
+  outline-offset: -1.5px;
+  z-index: 5;
+}
+
+.form__button-wrapper {
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+}
+.button__form {
+  width: 309px;
+}
+
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 370px;
+  @media (max-width: 1199px) {
+    margin: 0 auto;
+    width: 280px;
+  }
+  @media (max-width: 992px) {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+.custom-select {
+  position: relative;
+  background-color: white;
+  border: 1px solid #ccc;
+  color: $color-dark;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.options {
+  display: none;
+  position: absolute;
+  background-color: $color-dark;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  z-index: 100;
+}
+
+.option {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.option:hover {
+  color: $color-add;
+}
+
+.arrow {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
+}
+.active {
+  background: rgba(64, 64, 80, 0.85);
+  color: $color-white;
+}
+.icon-active {
+  fill: $color-white;
+}

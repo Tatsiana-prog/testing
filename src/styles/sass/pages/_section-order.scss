@@ -1,0 +1,136 @@
+.section-order {
+  padding: 115px 0 150px;
+  background-color: $color-bg;
+  background-image: url("../../../../img/bg-order.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media (max-width: 992px) {
+    padding: 80px 0;
+  }
+  @media (max-width: 575px) {
+    padding: 60px 0;
+  }
+}
+.order {
+  @media (max-width: 1199px) {
+    padding: 0 20px;
+  }
+}
+.order__title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.order__subtitle {
+  margin-bottom: 80px;
+  text-align: center;
+  color: $color-dark-grey;
+}
+.order__group {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+  @media (max-width: 992px) {
+    width: 80%;
+    margin: 0 auto 80px;
+    justify-content: center;
+    gap: 30px;
+  }
+  @media (max-width: 575px) {
+    width: 100%;
+    align-items: flex-start;
+  }
+}
+.order__box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20%;
+  @media (max-width: 1199px) {
+    width: 18%;
+  }
+  @media (max-width: 992px) {
+    width: 25%;
+  }
+}
+
+.order__circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: $color-add;
+  border: 5px solid $dark-blue;
+  margin: 0 auto 20px;
+  @media (max-width: 768px) {
+    width: 80px;
+    height: 80px;
+  }
+  @media (max-width: 575px) {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .order__circle svg {
+    width: 40px;
+    height: 50px;
+  }
+}
+.order__text {
+  font-size: 16px;
+  text-align: center;
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+.order__dots-line {
+  position: absolute;
+  top: 47px;
+  right: 53px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+  margin: 10px 0;
+  @media (max-width: 1199px) {
+    right: 43px;
+  }
+  @media (max-width: 992px) {
+    right: 46px;
+  }
+  @media (max-width: 768px) {
+    top: 28px;
+    gap: 15px;
+    right: 40px;
+  }
+  @media (max-width: 575px) {
+    top: 20px;
+    gap: 10px;
+    right: 34px;
+  }
+}
+.order__box:nth-child(4) .order__dots-line {
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background-color: $color-grey;
+  border-radius: 50%;
+}
+
+@media (max-width: 1199px) {
+  .dot--hidden {
+    display: none;
+  }
+}
