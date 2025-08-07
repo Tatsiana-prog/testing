@@ -756,7 +756,7 @@ input:focus,
   align-items: center;
   width: 100vw;
   height: 850px;
-  background-image: url(testing/img/img.png);
+  background-image: url("https://tatsiana-prog.github.io/testing/img/img.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -879,7 +879,7 @@ input:focus,
 .section-order {
   padding: 115px 0 150px;
   background-color: #10101D;
-  background-image: url("testing/img/bg-order.png");
+  background-image: url("https://tatsiana-prog.github.io/testing/img/bg-order.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
