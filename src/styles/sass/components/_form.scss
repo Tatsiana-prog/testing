@@ -174,26 +174,32 @@ input:focus,
 
 .custom-select {
   position: relative;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   background-color: white;
-  border: 1px solid #ccc;
+  border-top: 1px solid #3d4050;
+  border-left: 1px solid #3d4050;
+  border-bottom: 1px solid #3d4050;
   color: $color-dark;
-  border-radius: 5px;
   cursor: pointer;
   padding: 10px;
 }
 
 .options {
+  padding-right: 4px;
   display: none;
   position: absolute;
   background-color: $color-dark;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 3px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px #3d4050 solid;
   width: 100%;
   z-index: 100;
 }
 
 .option {
-  padding: 10px;
+  padding: 10.35px;
   cursor: pointer;
 }
 
@@ -215,4 +221,25 @@ input:focus,
 }
 .icon-active {
   fill: $color-white;
+}
+
+.option__list {
+  height: 180px;
+  overflow-y: scroll;
+}
+
+.option__list::-webkit-scrollbar {
+  right: 50px;
+  background: #c8c7c7;
+  width: 7px;
+}
+
+.option__list::-webkit-scrollbar-track {
+  background: #c8c7c7;
+}
+
+.option__list::-webkit-scrollbar-thumb {
+  background: $color-add;
+  border-radius: 4px;
+  width: 7px;
 }

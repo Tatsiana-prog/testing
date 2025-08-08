@@ -1,91 +1,84 @@
 html {
-    max-height: 10000000px;
-    min-height: 100vh; /* sticky footer */
-	scroll-behavior: smooth;
+  max-height: 10000000px;
+  min-height: 100vh; /* sticky footer */
+  scroll-behavior: smooth;
 }
 
 body {
-	min-height: 100vh; 
-	display: flex; 
-	flex-direction: column;
-	font-family: 'Lato', sans-serif;
-    color: $color-white;
-    font-size: 20px;
-    line-height: 1.2;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Lato", sans-serif;
+  color: $color-white;
+  font-size: 20px;
+  line-height: 1.2;
 
-    text-rendering: optimizeSpeed;
-    //text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-ms-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
+  text-rendering: optimizeSpeed;
+  //text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 body > * {
-	flex-shrink: 0; /* sticky footer */
+  flex-shrink: 0;
 }
 
-/* Grid styles */
-
 ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 img {
-    object-fit: cover;
+  object-fit: cover;
 }
-section {
-    
-}
+
 input {
-    color: $color-black;
-    font-weight: 600;
+  color: $color-black;
+  font-weight: 600;
 }
 
 a {
-    color: $color-white;
-    text-decoration: none;
+  color: $color-white;
+  text-decoration: none;
 }
 /* Utility */
 
 .none {
-	display: none !important;
+  display: none !important;
 }
 .container {
-    max-width: 1172px;
-    width: 100%;
-    margin: 0 auto;
+  max-width: 1172px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 h1 {
-    font-size: 48px;
-    font-weight: 600;
-    text-transform: uppercase;
-     @media (max-width: 992px) {
-     font-size: 40px;
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+  @media (max-width: 992px) {
+    font-size: 40px;
   }
   @media (max-width: 768px) {
-     font-size: 30px;
+    font-size: 30px;
   }
-   @media (max-width: 575px) {
-     font-size: 25px;
+  @media (max-width: 575px) {
+    font-size: 25px;
   }
 }
 
 h2 {
-    font-size: 36px;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-family: "Lato", sans-serif;
-    @media (max-width: 768px) {
-     font-size: 25px;
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  @media (max-width: 768px) {
+    font-size: 25px;
   }
-   @media (max-width: 575px) {
-     font-size: 19px;
+  @media (max-width: 575px) {
+    font-size: 19px;
   }
 }
-
-
-
